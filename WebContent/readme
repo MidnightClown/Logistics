@@ -1,0 +1,8 @@
+此项目为物流管理系统
+cus-serve文件夹为客户服务中心模块
+dis-center文件夹为配送中心模块
+finalcial management文件夹为财务管理模块
+sch-hub文件夹为调度中心模块
+style文件夹为css外部样式，js脚本，img图片和各类插件
+substation management文件夹为分站管理模块
+warehouse management文件夹为库房管理模块

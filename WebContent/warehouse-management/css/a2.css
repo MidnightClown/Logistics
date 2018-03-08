@@ -1,0 +1,14 @@
+#left{
+	float: left;
+	margin-top: 28px;
+	
+	
+}
+#right{
+	
+	float: right;
+}
+body{
+	background: #fff;
+}
+

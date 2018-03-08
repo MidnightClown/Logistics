@@ -1,0 +1,21 @@
+body{
+	width: 100%;
+}
+.h2color{
+	color: #337AB7;
+}
+.alginleft{
+	position: absolute;
+	margin-left: 950px;
+}
+.alginleft1{
+	position: absolute;
+	margin-left: 790px;
+}
+.inputwidth{
+	width: 150px;
+}
+.Topager{
+	margin-left: 580px;
+}
+

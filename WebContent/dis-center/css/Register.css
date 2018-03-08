@@ -1,0 +1,61 @@
+body{
+	width: 1000px;
+}
+.h2color{
+	color: #337AB7;
+}
+.alginleft{
+	position: absolute;
+	margin-left: 750px;
+}
+.inputwidth{
+	width: 150px;
+}
+.Topager{
+	position: absolute;
+	margin-left: 430px;
+}
+.smallinput{
+	width: 50px;
+}
+.middleinput{
+	width: 100px;
+}
+.middleinput1{
+	width: 100px;
+}
+.form-inline .form-control{
+	width: 100px;
+}
+.nav-left {
+	width: 260px;
+	height: auto;
+	/*border: 1px solid black;*/
+	position: fixed;
+	top: 80px;
+	background: #3E3E3E;
+	z-index: 300;
+}
+.classify{
+	overflow-y:scroll; 
+	width:300px; 
+	height:200px;
+}
+
+.hide1 li a span{
+	display: none;
+}
+.hide1 li a h6{
+	display: none;
+}
+.hide1 li a:hover span{
+	display: inline;
+	color: #000000;
+	position: absolute;
+	left: 240px;
+}
+.hide1 li a:hover h6{
+	display: inline;
+	color:gray;
+}
+

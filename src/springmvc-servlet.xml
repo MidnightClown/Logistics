@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:mvc="http://www.springframework.org/schema/mvc"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd	">
+
+  	<!-- 加入注解驱动 -->
+  	<mvc:annotation-driven />
+	
+	<!-- 不过滤静态资源 ，就是不会把HTML页面也当成.html为后缀的请求 -->
+	<mvc:resources location="/" mapping="/*.html"/> 
+	
+	<!-- mapping访问静态资源配置   image ，location指定静态资源的位置   以后加图片就只需要指定位置为image/+图片名 即可-->
+	<mvc:resources mapping="/image/**" location="/image/" />
+	
+	
+	<!-- 扫描注解包有几个类用了注解，就要加几个 -->
+	<context:component-scan base-package="com.service.impl"></context:component-scan>
+	<context:component-scan base-package="com.controller"></context:component-scan>
+	
+	<!-- 配置spring后置控制器  前缀+"success"+后缀-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		
+		<!-- 有时如果jstl不能直接用就加这段代码 
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property> 
+		-->
+		
+		<!-- prefix为前缀，即目录位置， value为具体的路径 -->
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<!-- suffix为后缀，为跳转的文件的格式 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	
+</beans>
